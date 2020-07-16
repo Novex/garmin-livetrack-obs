@@ -1,0 +1,43 @@
+{
+  "name": "garmin-livetrack-obs",
+  "version": "1.0.0",
+  "description": "Output text files to use in the OBS text source from a Garmin Livetrack email",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novex/garmin-livetrack-obs.git"
+  },
+  "keywords": [
+    "obs",
+    "garmin",
+    "livetrack",
+    "cycling",
+    "streaming",
+    "livestreaming"
+  ],
+  "author": "Seb Patane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/novex/garmin-livetrack-obs/issues"
+  },
+  "homepage": "https://github.com/novex/garmin-livetrack-obs#readme",
+  "dependencies": {
+    "assign-deep": "^1.0.1",
+    "es6-template-strings": "^2.0.1",
+    "imap": "^0.8.19",
+    "mimelib": "^0.3.1",
+    "node-fetch": "^2.6.0",
+    "signale": "^1.4.0"
+  },
+  "signale": {
+    "displayDate": true,
+    "displayTimestamp": true
+  }
+}
