@@ -2,6 +2,7 @@ const log = require('signale').scope('Core');
 const MailWatcher = require('./lib/MailWatcher');
 const fetch = require('node-fetch');
 const TextOutputter = require('./lib/TextOutputter');
+const assign = require('assign-deep');
 
 const VERSION = require('./package.json').version
 
@@ -39,7 +40,7 @@ let config = {
 log.info(`Starting garmin-livetrack-obs v${VERSION}`);
 
 try {
-    Object.assign(config, require('./config.js'));
+    assign(config, require('./config.js'));
 } catch (e) {
     log.warn("You should create an obs.config.js file based on the obs.config.js.sample template to overwrite the default values")
 }
