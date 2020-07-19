@@ -72,6 +72,12 @@ setInterval(async () => {
     
     const latestData = data.trackPoints.pop();
 
+    // Ensure these fields exist since they're not in the data if there's no GPS fix
+    latestData.speed = latestData.speed || 0;
+    if (latestData.fitnessPointData) {
+        latestData.fitnessPointData.speedMetersPerSec = latestData.fitnessPointData.speedMetersPerSec || 0;
+    }
+
     // Output full trackpoints.json for advanced users
     TextOutputter.OutputFile(config.outputFolder, "trackpoints.json", data);
 
