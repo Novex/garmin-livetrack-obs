@@ -1,6 +1,6 @@
 {
   "name": "garmin-livetrack-obs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Output text files to use in the OBS text source from a Garmin Livetrack email",
   "main": "index.js",
   "directories": {
