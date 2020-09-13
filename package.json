@@ -33,7 +33,7 @@
     "es6-template-strings": "^2.0.1",
     "imap": "^0.8.19",
     "mimelib": "^0.3.1",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "signale": "^1.4.0"
   },
   "signale": {
