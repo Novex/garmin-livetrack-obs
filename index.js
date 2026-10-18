@@ -72,6 +72,11 @@ setInterval(async () => {
     
     const latestData = data.trackPoints.pop();
 
+    if (!latestData) {
+        log.warn("No Garmin Livetrack trackpoints available yet, will try again on the next refresh");
+        return;
+    }
+
     // Ensure these fields exist since they're not in the data if there's no GPS fix
     latestData.speed = latestData.speed || 0;
     if (latestData.fitnessPointData) {
